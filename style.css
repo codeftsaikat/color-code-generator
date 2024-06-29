@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+        --primary: #005a76;
+}
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+body {
+        font-family: 'Poppins', sans-serif;
+}
+
+.title_container {
+        background: linear-gradient(to right, #ff6f61, #de5d83, #8a2be2);
+        padding: 10px 0;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.title_container h1 {
+        font-size: 25px;
+        font-weight: 600;
+}
+
+.button_container {
+        height: 20vh;
+        display: grid;
+        place-items: center;
+}
+
+.button_container button {
+        background: #ff6f61;
+        border: none;
+        font-size: 22px;
+        padding: 8px 18px;
+        border-radius: 5px;
+        letter-spacing: 1px;
+        color: white;
+        cursor: pointer;
+}
+
+.color_container {
+        height: calc(80vh - 80px);
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+}
+
+#color1 {
+        background-color: #de5d83;
+}
+
+#color2 {
+        background-color: #8a2be2;
+}
+
+#color3 {
+        background-color: aqua;
+}
+
+#color4 {
+        background-color: brown;
+}
+
+
+/* Responsive Design */
+@media (max-width: 468px) {
+        .title_container h1 {
+                text-align: center;
+                font-size: 18px;
+        }
+}
